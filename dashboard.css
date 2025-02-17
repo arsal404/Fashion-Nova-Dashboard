@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #1f1c2c, #928DAB);
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+header nav a:hover {
+    background: linear-gradient(to right, #9f1c2c, #888DAB);
+    transform: scale(1.05);
+}
+
+/* Summary Section */
+main {
+    margin-top: 20px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.summary-card {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.summary-card h3 {
+    margin: 0 0 10px;
+    color: #928DAB;
+}
+
+.summary-card p {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Form Pages Styles */
+form {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+form label {
+	cursor: pointer;
+}
+
+form label, form input, form select, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+form input[type="file"]{
+	display: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form button {
+    background: linear-gradient(to right, #1f1c2c, #928DAB);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Back to Dashboard Button Styling */
+.back-to-dashboard-btn {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to right, #1f1c2c, #928DAB);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.back-to-dashboard-btn:hover {
+    background: linear-gradient(45deg, #2E7D32, #4CAF50);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* File Upload Inputs */
+.file-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.file-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-input input[type="file"] {
+    width: auto;
+    flex: 1;
+    border: 1px solid #ced4da;
+    padding: 8px;
+}
+
+.file-input label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .summary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summary-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form input, form select, form button, form textarea {
+        padding: 10px;
+    }
+}
